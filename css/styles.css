@@ -1,0 +1,499 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Spartan';
+  src: url('../font/Spartan/Spartan-SemiBold.eot');
+  src: url('../font/Spartan/Spartan-SemiBold.eot?#iefix') format('embedded-opentype'),
+      url('../font/Spartan/Spartan-SemiBold.woff2') format('woff2'),
+      url('../font/Spartan/Spartan-SemiBold.woff') format('woff'),
+      url('../font/Spartan/Spartan-SemiBold.ttf') format('truetype'),
+      url('../font/Spartan/Spartan-SemiBold.svg#Spartan-SemiBold') format('svg');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Spartan';
+  src: url('../font/Spartan/Spartan-Medium.eot');
+  src: url('../font/Spartan/Spartan-Medium.eot?#iefix') format('embedded-opentype'),
+      url('../font/Spartan/Spartan-Medium.woff2') format('woff2'),
+      url('../font/Spartan/Spartan-Medium.woff') format('woff'),
+      url('../font/Spartan/Spartan-Medium.ttf') format('truetype'),
+      url('../font/Spartan/Spartan-Medium.svg#Spartan-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Spartan';
+  src: url('../font/Spartan/Spartan-ExtraLight.eot');
+  src: url('../font/Spartan/Spartan-ExtraLight.eot?#iefix') format('embedded-opentype'),
+      url('../font/Spartan/Spartan-ExtraLight.woff2') format('woff2'),
+      url('../font/Spartan/Spartan-ExtraLight.woff') format('woff'),
+      url('../font/Spartan/Spartan-ExtraLight.ttf') format('truetype'),
+      url('../font/Spartan/Spartan-ExtraLight.svg#Spartan-ExtraLight') format('svg');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Spartan';
+  src: url('../font/Spartan/Spartan-Regular.eot');
+  src: url('../font/Spartan/Spartan-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../font/Spartan/Spartan-Regular.woff2') format('woff2'),
+      url('../font/Spartan/Spartan-Regular.woff') format('woff'),
+      url('../font/Spartan/Spartan-Regular.ttf') format('truetype'),
+      url('../font/Spartan/Spartan-Regular.svg#Spartan-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Spartan';
+  src: url('../font/Spartan/Spartan-Black.eot');
+  src: url('../font/Spartan/Spartan-Black.eot?#iefix') format('embedded-opentype'),
+      url('../font/Spartan/Spartan-Black.woff2') format('woff2'),
+      url('../font/Spartan/Spartan-Black.woff') format('woff'),
+      url('../font/Spartan/Spartan-Black.ttf') format('truetype'),
+      url('../font/Spartan/Spartan-Black.svg#Spartan-Black') format('svg');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Spartan';
+  src: url('../font/Spartan/Spartan-Bold.eot');
+  src: url('../font/Spartan/Spartan-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../font/Spartan/Spartan-Bold.woff2') format('woff2'),
+      url('../font/Spartan/Spartan-Bold.woff') format('woff'),
+      url('../font/Spartan/Spartan-Bold.ttf') format('truetype'),
+      url('../font/Spartan/Spartan-Bold.svg#Spartan-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Spartan';
+  src: url('../font/Spartan/Spartan-Thin.eot');
+  src: url('../font/Spartan/Spartan-Thin.eot?#iefix') format('embedded-opentype'),
+      url('../font/Spartan/Spartan-Thin.woff2') format('woff2'),
+      url('../font/Spartan/Spartan-Thin.woff') format('woff'),
+      url('../font/Spartan/Spartan-Thin.ttf') format('truetype'),
+      url('../font/Spartan/Spartan-Thin.svg#Spartan-Thin') format('svg');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Spartan';
+  src: url('../font/Spartan/Spartan-ExtraBold.eot');
+  src: url('../font/Spartan/Spartan-ExtraBold.eot?#iefix') format('embedded-opentype'),
+      url('../font/Spartan/Spartan-ExtraBold.woff2') format('woff2'),
+      url('../font/Spartan/Spartan-ExtraBold.woff') format('woff'),
+      url('../font/Spartan/Spartan-ExtraBold.ttf') format('truetype'),
+      url('../font/Spartan/Spartan-ExtraBold.svg#Spartan-ExtraBold') format('svg');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Spartan';
+  src: url('../font/Spartan/Spartan-Light.eot');
+  src: url('../font/Spartan/Spartan-Light.eot?#iefix') format('embedded-opentype'),
+      url('../font/Spartan/Spartan-Light.woff2') format('woff2'),
+      url('../font/Spartan/Spartan-Light.woff') format('woff'),
+      url('../font/Spartan/Spartan-Light.ttf') format('truetype'),
+      url('../font/Spartan/Spartan-Light.svg#Spartan-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  font-family: "Spartan", Arial; 
+} 
+.section {
+	/* padding-top: 160px; */
+	padding-bottom: 160px;
+}
+
+/* pozitia 1 Header */
+
+.header {
+  background: #EF6039;
+  padding: 5px;
+   /* nustiu cum sa-l centrz totul de o data */                      
+}
+.mr-auto {
+  align-self:center;
+}
+.header-menu a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  padding: 30px;
+}  
+.header-menu {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  overflow: hidden;
+}
+.header-menu li {
+  float: left;
+} 
+ .header-menu button  {
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 14px 36px;
+  background: #FFFFFF;
+  border-radius: 24px; 
+  text-align: center;
+  color: #EF6039;
+}
+.header-menu button:hover {
+  background-color: #4CAF50;
+  color: white; 
+}
+
+/* pozitia 2 Baner */
+
+.banner {
+  position: relative;
+  overflow: hidden;
+  padding-top: 160px;
+  padding-bottom: 162px; 
+}
+.banner img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}  
+.banner-content {
+  position: relative;
+  z-index: 1;
+}
+.display-left {
+  max-width: 458px;
+  height: auto;
+}
+.button-explore {
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 14px 36px;
+  background: #EF6039;
+  border-radius: 24px;
+  text-align: center;
+  color: #ffffff;
+}
+.button-explore:hover {
+  background-color: #4CAF50;
+  color: white; 
+}
+.title-icon--white {
+  padding-bottom: 30px;
+  font-family: Spartan;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.text-white {
+  padding-bottom: 30px;
+  font-family: Spartan;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 72px;
+  line-height: 80px;
+  letter-spacing: -3px; 
+}
+.hide-small {
+  padding-bottom: 30px;
+  font-family: Spartan;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing:inherit;
+}
+
+/* pozitia 3 About */
+
+.About {
+  padding-top: 155px;
+}
+.col-sm-6__text {
+  padding-top: 150px;
+  padding-left: 127px;
+}
+.title-icon--orange {
+  padding-bottom: 34px;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #EF6039;
+}
+.big {
+  padding-bottom: 33px;
+  font-weight: 300;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: -2px;
+}
+.medium {
+ padding-bottom: 30px;
+ font-size: 20px;
+  line-height: 32px;
+}
+.transparent {
+  padding-bottom: 30px;
+  font-size: 16px;
+  line-height: 32px;
+  color: rgba(51, 51, 51, 0.5);
+}
+.button-learn {
+  padding: 14px 36px;
+  background: #EF6039;
+  border-radius: 24px;
+  color: #ffffff;
+}
+.button-learn:hover {
+  background-color: #4CAF50;
+  color: white;  
+  /* box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19); */
+}
+
+/* pozitia 4 Team */
+
+.team {
+  padding-top: 160px;
+}
+.title-icon__teams {
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #EF6039;
+}
+.experts {
+  padding-bottom: 60px;
+  padding-top: 38px;
+  font-weight: 300;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: -2px;
+  color: #333333;
+  text-transform: none;
+}
+h3 {
+  padding-top: 22px;
+  padding-bottom: 12px;
+  font-size: 16px;
+  line-height: 32px;
+  color: #4F4F4F;
+}
+h2 {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 32px;
+  color: #333333;
+}
+.button__view {
+  display: flex; 
+  justify-content: center;
+  padding-top: 74px;
+  padding-bottom: 174px;  
+} 
+.button-view {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 14px 36px;
+  border: 1px solid rgba(239, 96, 57, 0.300385);
+  box-sizing: border-box;
+  border-radius: 24px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: #EF6039;
+
+}
+.button-view:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/* pozitia 5 News */
+
+.news {
+  padding-top: 174px;
+  padding-bottom: 174px;
+  background-color:  #252525;;
+}
+.news h2 {
+  color: #FFFFFF;
+  padding-top: 12px;
+  padding-bottom: 36px;
+}
+.news h3 {
+  color: #fff;
+}
+.stories {
+  font-weight: 300;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: -2px;
+  color: #FFFFFF;
+  padding-top: 30px;
+  padding-bottom: 66px;
+  padding-right: 700px;
+}
+.button-read {
+  display: flexbox;
+  flex-direction: row;
+  align-items: flex-start; 
+  padding: 14px 36px;
+  height: 46px; 
+  border: 1px solid rgba(255, 255, 255, 0.295743);
+  box-sizing: border-box; 
+  border-radius: 24px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.button-read:hover {
+  background-color: #4CAF50;
+  color: white; 
+}
+
+/* pozitia 6 banner-orange */
+
+.banner-orange {
+  background-color: #EF6039;
+}
+.banner-orange h1 {
+  font-weight: 300;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: -2px;
+  color: #FFFFFF;
+  padding-bottom: 36px;
+}
+.banner-orange .col-sm-6-orange {
+  padding-top: 60px;
+  padding-right: 80px;
+  padding-left: 113px;
+}
+.button-us {
+  border: 1px solid rgba(255, 255, 255, 0.295743);
+  box-sizing: border-box;
+  border-radius: 24px;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 14px 36px;
+}
+.button-us:hover {
+  background-color: #4CAF50;
+  color: white; 
+}
+
+/* pozitia 7 Footer */
+
+.footer {
+  background-color: #252525;
+  padding-top: 160px;
+  padding-bottom:460px;
+}
+.footer-menu li+li {
+  margin-top: 8px;
+}
+a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+}  
+.footer-title {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-align: left;
+  color: #EF6039;
+  margin-bottom: 30px;
+}
+.footer-title-second {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-align: left;
+  color: #EF6039;
+  margin-bottom: 30px;
+}
+.footer-title-third {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-align: left;
+  color: #EF6039;
+  margin-bottom: 30px;
+}
+.logo {
+  padding-top: 23px;
+  padding-bottom: 23px;
+  padding-left: 152px;
+  padding-right: 1200px;
+} 
+.banner {
+  position: relative;
+  overflow: hidden;
+  padding-top: 160px;
+  padding-bottom: 162px; 
+}
+.banner img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}  
+.banner-content {
+  position: relative;
+  z-index: 1;
+}
+.copyright {
+  padding-top: 40px;
+  padding-bottom: 160px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 32px;
+  color: rgba(255, 255, 255, 0.502972);
+} 
+.copyright p {
+  padding-top: 40px;
+}
